@@ -2,16 +2,16 @@ let counterValue=0;
 
 const decrement=document.querySelector('#counter').firstElementChild;
 const increment=document.querySelector('#counter').lastElementChild;
-let value=Number(document.querySelector('#value').textContent);
+let value=document.querySelector('#value');
 const firstCallback = () => {
   console.log("First callback!");
 };
-const increase=()=>{return counterValue+1};
-const decrease=()=>counterValue-1;
+const increase=()=>{
+  counterValue+=1;
+  value.textContent=counterValue};
+const decrease=()=>{counterValue-=1;value.textContent=counterValue}
 
 decrement.addEventListener('click',decrease);
 increment.addEventListener('click',increase);
-console.log(value)
-value=counterValue;
-console.log(value)
+
 
