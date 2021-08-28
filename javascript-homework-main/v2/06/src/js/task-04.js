@@ -1,8 +1,9 @@
-let counterValue=0;
-
 const decrement=document.querySelector('#counter').firstElementChild;
 const increment=document.querySelector('#counter').lastElementChild;
 let span=document.querySelector('#value');
+let valueCounter=0;
+
+valueCounter=Number(span.textContent);
 
 const increase=(e)=>{
 valueCounter+=Number(increment.textContent);
