@@ -29,8 +29,5 @@ gallery.addEventListener('click',(event=>{
   );
   instance.show()
 
-  // instance.addEventListener('keydown', (event, istance) => {
-  //   if ('Escape' === event.key) {
-  //       istance.close();}})
-
+  
 }));
