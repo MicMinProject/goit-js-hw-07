@@ -1,8 +1,6 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-
-
 const gallery=document.querySelector('.gallery');
 
 galleryItems.forEach(item=>
@@ -24,10 +22,8 @@ gallery.addEventListener('click',(event=>{
   
   const instance=basicLightbox.create(
     `
-      <img src=${event.target.dataset.source}>
+          <img src=${event.target.dataset.source}>
     `
   );
   instance.show()
-
-  
 }));
